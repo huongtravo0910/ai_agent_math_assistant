@@ -1,54 +1,91 @@
-# MathAssistant Crew
+# Math Assistant Crew
 
-Welcome to the MathAssistant Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Math Assistant Crew is an AI-powered project designed to answer mathematical problems with detailed reasoning and step-by-step explanations. Built using Crew AI, this project aims to provide accurate, well-structured solutions to complex math queries while enhancing users' understanding of problem-solving techniques.
+
+
+## Features
+
+- AI-driven problem-solving with reasoning
+
+- Step-by-step explanations for better understanding
+
+- Support for various mathematical topics (algebra, geometry, calculus, etc.)
+
+- Customizable workflow for different problem types
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Python >=3.10 <3.13
+
+- pip (Python package manager)
+
+- A compatible Large Language Model (e.g., OpenAI, Anthropic, etc.)
+
+- API keys for LLM providers
 
 ## Installation
 
-Ensure you have Python >=3.10 <3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Clone the repository and install dependencies:
+```
+# Clone the repository
 
-First, if you haven't already, install uv:
+git clone https://github.com/huongtravo0910/ai_agent_math_assistant.git
 
-```bash
-pip install uv
+cd math_assistant
+
+# Create a virtual environment
+
+python -m venv venv
+
+source venv/bin/activate  
+
+# On Windows use `venv\\Scripts\\activate`
+
 ```
 
-Next, navigate to your project directory and install the dependencies:
+## Configuration
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
+Create a `.env` file in the project root and add your API keys:
+
 ```
-### Customizing
+API_KEY=your_api_key
+MODEL=your_model
+```
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+## Preparing the Problem
 
-- Modify `src/math_assistant/config/agents.yaml` to define your agents
-- Modify `src/math_assistant/config/tasks.yaml` to define your tasks
-- Modify `src/math_assistant/crew.py` to add your own logic, tools and specific args
-- Modify `src/math_assistant/main.py` to add custom inputs for your agents and tasks
+Before running the project, add your question to the problem.txt file:
+
+```
+echo "Your question here" > problem.txt
+```
 
 ## Running the Project
 
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+Run the main script to start the Crew AI agents:
 
-```bash
-$ crewai run
+```
+crewai run
 ```
 
-This command initializes the math-assistant Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
+## Customization
 
-## Understanding Your Crew
+Modify agents/ to define your own AI agents.
 
-The math-assistant Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+Adjust tasks/ to orchestrate tasks as per your needs.
 
-## Support
+Update .env to use different API keys or services.
 
-For support, questions, or feedback regarding the MathAssistant Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
+## Troubleshooting
 
-Let's create wonders together with the power and simplicity of crewAI.
+API Errors: Ensure your API keys are correct and active.
+
+Virtual Environment Issues: Ensure the virtual environment is activated.
+
+---
+
+Happy Coding! 🚀
+
