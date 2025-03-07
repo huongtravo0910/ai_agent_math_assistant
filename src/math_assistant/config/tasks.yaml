@@ -1,0 +1,16 @@
+solving_problem_task:
+  description: >
+    Solve the following math problem step by step:\n\n{problem}
+    Make sure you solve it in detail and explain each step.
+  expected_output: >
+    Provide a structured, step-by-step breakdown of the solution.
+  agent: student
+
+reporting_task:
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A fully fledged report with the main topics, each with a full section of information.
+    Formatted as markdown without '```'
+  agent: reporter
