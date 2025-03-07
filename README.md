@@ -33,7 +33,7 @@ Clone the repository and install dependencies:
 
 git clone https://github.com/huongtravo0910/ai_agent_math_assistant.git
 
-cd math_assistant
+cd ai_agent_math_assistant
 
 # Create a virtual environment
 
