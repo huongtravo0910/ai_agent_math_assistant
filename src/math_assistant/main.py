@@ -75,11 +75,6 @@ def clean_extracted_text(raw_html):
     return text
 
 
-# Example usage
-raw_html = """<div class="question-content__1lpw2-"><div class="markup"><p>図のように2つの四角形ア, ウがある。</p></div></div>"""
-cleaned_text = clean_extracted_text(raw_html)
-
-
 def train():
     """
     Train the crew for a given number of iterations.

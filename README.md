@@ -37,11 +37,11 @@ cd ai_agent_math_assistant
 
 # Create a virtual environment
 
-python -m venv venv
+python -m venv math_assistant_env
 
-source venv/bin/activate  
+source math_assistant/bin/activate  
 
-# On Windows use `venv\\Scripts\\activate`
+# On Windows use `math_assistant\\Scripts\\activate`
 
 ```
 
