@@ -21,8 +21,6 @@ Before you begin, ensure you have the following installed:
 
 - pip (Python package manager)
 
-- A compatible Large Language Model (e.g., OpenAI, Anthropic, etc.)
-
 - API keys for LLM providers
 
 ## Installation
